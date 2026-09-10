@@ -1,0 +1,10 @@
+# Kredensial database — jangan pernah ke-push
+config/database.php
+
+# File sistem yang suka nyangkut
+.DS_Store
+Thumbs.db
+
+# Folder editor
+.vscode/
+.idea/

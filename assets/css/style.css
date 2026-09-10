@@ -1,0 +1,180 @@
+/* ================= RESET ================= */
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+/* ================= HOME SLIDER ================= */
+#home {
+  margin-top: 56px;
+}
+
+.slider-bg {
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.slider-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+}
+
+.slider-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 20px;
+}
+
+.slider-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.slider-content p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* ================= CAROUSEL BUTTON ================= */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+.carousel-indicators button {
+  background-color: #fff;
+}
+
+/* ================= SECTION ================= */
+section {
+  scroll-margin-top: 80px;
+}
+
+/* ================= KATALOG RAKET ================= */
+.card {
+  border: none;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+/* ================= JADWAL ================= */
+#jadwal table th {
+  font-weight: 600;
+}
+
+#jadwal .badge {
+  font-size: 0.9rem;
+}
+
+/* ================= BERITA ================= */
+#berita img {
+  height: 220px;
+  object-fit: cover;
+}
+
+/* ================= MODAL ================= */
+.modal-content img {
+  border-radius: 10px;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  margin-top: 40px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+  .slider-content h1 {
+    font-size: 2rem;
+  }
+
+  .slider-content p {
+    font-size: 1rem;
+  }
+
+  .card img {
+    height: 180px;
+  }
+}
+
+.modal-raket {
+  max-width: 420px;
+}
+
+@media (max-width: 576px) {
+  .modal-raket {
+    max-width: 95%;
+  }
+}
+
+.raket-card:hover{
+  transform: translateY(-5px);
+  transition: .3s;
+}
+
+.raket-desc{
+  display: -webkit-box;
+  -webkit-line-clamp: 3;      /* maksimal 3 baris */
+  line-clamp: 3;              /* standar (future compatibility) */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  line-height: 1.4em;
+  min-height: 4.2em;          /* 3 baris x 1.4em */
+}
+
+/* DESKRIPSI MODAL RAKET */
+.raket-desc-modal{
+  font-size: 13px;
+  color: #666;
+
+  /* wajib supaya teks random tidak melebar */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 4;   /* maksimal 4 baris di modal */
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  line-height: 1.4em;
+  max-height: 5.6em; /* 4 baris */
+}
+
+.raket-desc-modal:hover{
+  -webkit-line-clamp: unset;
+  line-clamp: unset;
+  max-height: none;
+}
+
